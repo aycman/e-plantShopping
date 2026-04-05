@@ -250,3 +250,29 @@ body {
         text-align: center; /* Align text to the center */
       }
   }
+
+  .cart-count {
+    position: absolute;
+    top: 37px;
+    right: 35px;
+    /* background-color: #ff4757; */
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.product-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    border: 1px solid;
+}
+.product-button:disabled:hover {
+    background-color: #ccc;
+}
