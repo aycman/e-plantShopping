@@ -19,14 +19,26 @@ const CartItem = ({ onContinueShopping }) => {
 
 
   const handleIncrement = (item) => {
-    
+    dispatch(updateQuantity({name: item.name, quantity: item.quantity + 1}));
+    //dispatch the updateQuantity() reducer
+    //In the function argument, either add one to the item.quantity value or subtract one, respectively.
+
   };
 
   const handleDecrement = (item) => {
-   
+    //   Also, for the handleDecrement() you will need an if-else to handle the case.
+    // – If the item's quantity is greater than 1, dispatch updateQuantity to decrease the quantity by 1.
+    // – Else if the quantity would drop to 0, dispatch the removeItem action to remove the plant type from the cart.
+    if (item.quantity > 1) {
+    dispatch(updateQuantity({name: item.name, quantity: item.quantity - 1}));
+    } else if (item.quantity < 1) {
+      dispatch(removeItem(item.name));
+    }
   };
 
   const handleRemove = (item) => {
+    //For the handleRemove() function you need to dispatch the removeItem action to delete the item from the cart.
+    dispatch(removeItem(item.name));
   };
 
   // Calculate total cost based on quantity for an item
