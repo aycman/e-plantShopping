@@ -175,12 +175,17 @@ body {
   }
 
   .content p {
-    font-size: 21px;
+    font-size: 18px;
+
   }
 
   .aboutus_container {
     width: 100%;
     max-width: 600px;
+    margin-top: -30%;
+    scale: 80%;
+
+    
   }
 }
 
@@ -201,7 +206,7 @@ body {
   }
 
   .content p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .get-started-button {
@@ -212,6 +217,7 @@ body {
 
   .aboutus_container {
     width: 100%;
+    margin-top: -40%;
   }
 }
 
