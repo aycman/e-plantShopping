@@ -33,7 +33,7 @@ body {
   left: 0;
   min-height: 100%;
   width: 100%;
-  background-image: url('https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg');
+  background-image: url('/src/assets/bg-plants-low-2-2.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(0.8);
